@@ -28,20 +28,20 @@ ApplicationWindow {
         settings.localStorageEnabled: true
         url: webUrl
 
-        onLoadingChanged: {
-            if(webView.status === webView.LoadSucceededStatus){
+        // onLoadingChanged: {
+        //     if(webView.status === webView.LoadSucceededStatus){
 
-                var jsText = '
-                    var barkodInput = document.getElementById("barkod")
+        //         var jsText = '
+        //             var barkodInput = document.getElementById("barkod")
 
-                    if(barkodInput){
-                        barkodInput.addEventListener(\'click\', function(event){
-                            barkodInput.setAttribute(\'inputmode\', \'none\')
-                        })
-                    }';
+        //             if(barkodInput){
+        //                 barkodInput.addEventListener(\'click\', function(event){
+        //                     barkodInput.setAttribute(\'inputmode\', \'none\')
+        //                 })
+        //             }';
 
-                webView.runJavaScript(jsText);
-            }
-        }
+        //         webView.runJavaScript(jsText);
+        //     }
+        // }
     }
 }
