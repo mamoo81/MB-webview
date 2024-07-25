@@ -8,7 +8,7 @@ ApplicationWindow {
     visible: true
     title: qsTr("MetaBox")
 
-    property url webUrl: "https://bulentcan.com/metabox"
+    property url webUrl: "https://metaboxsoftware.com/alixavien/"
 
     Text {
         anchors.centerIn: parent
